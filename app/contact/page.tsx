@@ -18,14 +18,15 @@ const fadeIn = {
 export default function Contact() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form Submitted", formData);
     };
+
 
     return (
         <div className="min-h-screen bg-gray-50">
@@ -100,7 +101,7 @@ export default function Contact() {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    rows="4"
+                                    rows={4}
                                     className="w-full mt-2 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-400"
                                     placeholder="Your Message"
                                     required

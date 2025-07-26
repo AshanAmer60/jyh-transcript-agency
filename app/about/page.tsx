@@ -394,7 +394,7 @@ export default function AboutUs() {
                         </div>
                         <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 tracking-tight">What Our Clients Say</h2>
                         <p className="text-slate-700 text-lg max-w-3xl mx-auto">
-                            Don't just take our word for it. Here's what our clients have to say about our services.
+                            Don&apos;t just take our word for it. Here&apos;s what our clients have to say about our services.
                         </p>
                     </motion.div>
 
@@ -442,7 +442,7 @@ export default function AboutUs() {
                                             </span>
                                         ))}
                                 </div>
-                                <p className="text-slate-700 mb-6 italic">"{testimonial.quote}"</p>
+                                <p className="text-slate-700 mb-6 italic">&quot;{testimonial.quote}&quot;</p>
                                 <div className="flex items-center">
                                     <div className="bg-slate-200 rounded-full w-12 h-12 flex items-center justify-center mr-4">
                                         <span className="text-slate-600 font-semibold">{testimonial.author.charAt(0)}</span>
@@ -480,7 +480,7 @@ export default function AboutUs() {
                             <div className="relative z-10 text-center">
                                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-tight">Ready to Work With Us?</h2>
                                 <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                                    Partner with a trusted, government-certified agency for all your transcription and language needs. Let's
+                                    Partner with a trusted, government-certified agency for all your transcription and language needs. Let&apos;s
                                     start a conversation today.
                                 </p>
                                 <div className="flex flex-wrap justify-center gap-4">
